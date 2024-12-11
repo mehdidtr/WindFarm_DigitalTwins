@@ -7,7 +7,7 @@ using UnityEditor;
 public class ProcessData : MonoBehaviour
 {
     [SerializeField] private TextAsset csvFile;
-    [SerializeField] private TurbineDataContainer turbineDataContainer; // Target ScriptableObject
+    [SerializeField] private TurbineDataContainer turbineDataContainer; 
 
     public void GenerateTurbineData()
     {
@@ -33,7 +33,7 @@ public class ProcessData : MonoBehaviour
             if (string.IsNullOrEmpty(line)) continue;
 
             string[] data = line.Split(',');
-            if (data.Length < 8) continue; // Ensure all columns exist
+            if (data.Length < 8) continue; 
 
             string turbineID = data[0].Trim();
             if (!turbineDataGroups.ContainsKey(turbineID))
@@ -45,7 +45,6 @@ public class ProcessData : MonoBehaviour
 
         List<TurbineData> turbinesList = new List<TurbineData>();
 
-        // Create TurbineData objects
         foreach (var entry in turbineDataGroups)
         {
             string turbineID = entry.Key;

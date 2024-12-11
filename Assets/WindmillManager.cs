@@ -13,7 +13,6 @@ public class WindmillManager : MonoBehaviour
 
     private void Start()
     {
-        // Fetch data for the turbineID from the container
         turbineData = turbineDataContainer.GetTurbineDataByID(turbineID);
 
         if (turbineData != null)
