@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &91972214
+--- !u!1 &35124883
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,49 +130,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 91972216}
-  - component: {fileID: 91972215}
+  - component: {fileID: 35124885}
+  - component: {fileID: 35124884}
   m_Layer: 0
-  m_Name: WindFarmController
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &91972215
+--- !u!114 &35124884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91972214}
+  m_GameObject: {fileID: 35124883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4db45b1e1f7464196af75289f0e0b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 60d5bd919c4e94b4c9112f3f9c7dd3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: data.csv
-  windTurbines:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!4 &91972216
+  csvFile: {fileID: 4900000, guid: 010200414c2feeb458ecd02b6471b767, type: 3}
+  turbineDataContainer: {fileID: 11400000, guid: e6ea39f1038d2fe45bc160464474e6ba,
+    type: 2}
+--- !u!4 &35124885
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91972214}
+  m_GameObject: {fileID: 35124883}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.96892, y: -22.434635, z: -99.80996}
+  m_LocalPosition: {x: 112.0672, y: -23.356955, z: -22.002726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -306,7 +297,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 41
+  field of view: 55.8
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -333,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 100, y: 40, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1419,5 +1410,5 @@ SceneRoots:
   - {fileID: 182999938}
   - {fileID: 381691311}
   - {fileID: 517417321}
-  - {fileID: 91972216}
   - {fileID: 1447881606}
+  - {fileID: 35124885}
